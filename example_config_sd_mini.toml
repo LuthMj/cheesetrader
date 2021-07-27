@@ -1,0 +1,54 @@
+title = "CheeseTrader Configuration"
+
+[project]
+authors = "Richard Diphoorn/Sebastian Mahuzier"
+credits = ""
+description = "CheeseTrader helps scalpers to quickly open & close positions in MetaTrader 5 with the help of a Legato Stream Deck"
+discord = "mooncake/smahuzier"
+name = "CheeseTrader"
+updated = 2021-07-23T12:00:00Z
+version = "0.1"
+
+[mainConfig]
+brightness = 100 # Brightness of your Stream Deck buttons
+
+[metatraderConfig]
+symbol = "GER30.cash" # If a symbol is not configured on a button, this will be the default value.
+
+[buttonConfig]
+#-----------#
+# 1 | 2 | 3 |
+# 4 | 5 | 6 |
+#-----------#
+[buttonConfig.button1]
+action = "buy"
+imagePath = "US30BUY4.png"
+symbol = "US30.cash"
+lotSize = 4
+
+[buttonConfig.button2]
+action = "buy"
+imagePath = "US30BUY8.png"
+symbol = "US30.cash"
+lotSize = 8
+
+[buttonConfig.button3]
+action = "exit"
+imagePath = "exit.png"
+lotSize = 0
+
+[buttonConfig.button4]
+action = "sell"
+imagePath = "US30SELL4.png"
+symbol = "US30.cash"
+lotSize = 4
+
+[buttonConfig.button5]
+action = "sell"
+imagePath = "US30SELL8.png"
+symbol = "US30.cash"
+lotSize = 8
+
+[buttonConfig.button6]
+action = "closeall"
+imagePath = "close.png"

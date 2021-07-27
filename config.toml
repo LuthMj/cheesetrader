@@ -1,0 +1,176 @@
+title = "CheeseTrader Configuration"
+
+[project]
+authors = "Richard Diphoorn/Sebastian Mahuzier"
+credits = ""
+description = "CheeseTrader helps scalpers to quickly open & close positions in MetaTrader 5 with the help of a Legato Stream Deck"
+discord = "mooncake/smahuzier"
+name = "CheeseTrader"
+updated = 2021-07-23T12:00:00Z
+version = "0.1"
+
+[mainConfig]
+brightness = 100 # Brightness of your Stream Deck buttons
+
+[metatraderConfig]
+symbol = "GER30.cash" # If a symbol is not configured on a button, this will be the default value.
+
+[buttonConfig]
+#---------------------------------------#
+# 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  #
+# 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 #
+# 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 #
+# 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 #
+#---------------------------------------#
+[buttonConfig.button1]
+action = "buy"
+imagePath = "US30BUY2.png"
+symbol = "US30.cash"
+lotSize = 2
+
+[buttonConfig.button2]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button3]
+action = "sell"
+imagePath = "US30SELL2.png"
+symbol = "US30.cash"
+lotSize = 2
+
+[buttonConfig.button4]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button5]
+action = "buy"
+imagePath = "GER30BUY2.png"
+symbol = "GER30.cash"
+lotSize = 2
+
+[buttonConfig.button6]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button7]
+action = "sell"
+imagePath = "GER30SELL2.png"
+symbol = "GER30.cash"
+lotSize = 2
+
+[buttonConfig.button8]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button9]
+action = "buy"
+imagePath = "US30BUY4.png"
+symbol = "US30.cash"
+lotSize = 4
+
+[buttonConfig.button10]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button11]
+action = "sell"
+imagePath = "US30SELL4.png"
+symbol = "US30.cash"
+lotSize = 4
+
+[buttonConfig.button12]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button13]
+action = "buy"
+imagePath = "GER30BUY4.png"
+symbol = "GER30.cash"
+lotSize = 4
+
+[buttonConfig.button14]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button15]
+action = "sell"
+imagePath = "GER30SELL4.png"
+symbol = "GER30.cash"
+lotSize = 4
+
+[buttonConfig.button16]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button17]
+action = "buy"
+imagePath = "US30BUY8.png"
+symbol = "US30.cash"
+lotSize = 8
+
+[buttonConfig.button18]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button19]
+action = "sell"
+imagePath = "US30SELL8.png"
+symbol = "US30.cash"
+lotSize = 8
+
+[buttonConfig.button20]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button21]
+action = "buy"
+imagePath = "GER30BUY8.png"
+symbol = "GER30.cash"
+lotSize = 8
+
+[buttonConfig.button22]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button23]
+action = "sell"
+imagePath = "GER30SELL8.png"
+symbol = "GER30.cash"
+lotSize = 8
+
+[buttonConfig.button24]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button25]
+action = "closeall"
+imagePath = "close.png"
+
+[buttonConfig.button26]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button27]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button28]
+action = ""
+imagePath = "cheese.png"
+
+[buttonConfig.button29]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button30]
+action = ""
+imagePath = "black.png"
+
+[buttonConfig.button31]
+action = "cmd"
+command = "C:\\Users\\jodiphoo\\AppData\\Local\\Discord\\Update.exe --processStart Discord.exe"
+imagePath = "discord.png"
+
+[buttonConfig.button32]
+action = "exit"
+imagePath = "exit.png"
