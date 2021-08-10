@@ -1,0 +1,51 @@
+{
+    "Actions": [
+        {
+            "Icon": "images/whitecheese",
+            "Name": "Order",
+            "States": [{
+                "Image": "images/black"
+            }],
+            "SupportedInMultiActions": true,
+            "Tooltip": "Send an order action to the CheeseTraderAPI",
+            "UUID": "io.cheesetrader.api.order",
+            "PropertyInspectorPath": "pi/order_pi.html"
+        },
+        {
+            "Icon": "images/whitecheese",
+            "Name": "Close All Positions",
+            "States": [
+                {
+                    "Image": "images/black"
+                }
+            ],
+            "SupportedInMultiActions": true,
+            "Tooltip": "Send an position close action to the CheeseTraderAPI",
+            "UUID": "io.cheesetrader.api.position",
+            "PropertyInspectorPath": "pi/position_pi.html"
+        }
+    ],
+    "SDKVersion": 2,
+    "Author": "Richard Diphoorn",
+    "CodePath": "main.html",
+    "Category": "CheeseTrader",
+    "CategoryIcon": "images/whitecheese",
+    "Description": "CheeseTrader Plugin",
+    "Name": "CheeseTrader",
+    "Icon": "images/whitecheese",
+    "URL": "https://github.com/cheesetrader",
+    "Version": "0.1.0",
+    "DefaultWindowSize": [
+        600,
+        700
+    ],
+      "OS": [
+        {
+            "Platform": "windows",
+            "MinimumVersion": "10"
+        }
+    ],
+    "Software": {
+        "MinimumVersion" : "4.1"
+    }
+}
