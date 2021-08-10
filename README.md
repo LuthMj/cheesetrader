@@ -1,7 +1,9 @@
 # cheesetrader
-Scalping Perfected
+Scalping Perfected ~ matheauFX
 
 NOTE: CheeseTrader only works for Windows, no other OS support, sorry.
+
+> Make sure you watch this video first before doing stupid stuff on your pc you cnut: https://youtu.be/L7YeSmx9kcA
 
 # Installation Steps
 1. Download and Install MetaTrader 5: https://www.metatrader5.com/en/download - close the program after installation.
