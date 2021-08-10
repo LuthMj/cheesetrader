@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>io.cheesetrader.api.order</title>
+        <link rel="stylesheet" href="../css/sdpi.css">
+        <script src="../js/common.js"></script>
+        <script src="../js/order_pi.js"></script>
+    </head>
+    <body>
+        <div class="sdpi-wrapper">
+            <div class="sdpi-item" id="select_single">
+                <div class="sdpi-item-label">Order Type</div>
+                <select class="sdpi-item-value select inspector" id="order_type">
+                    <option value="buy">Buy</option>
+                    <option value="sell">Sell</option>
+                </select>
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label">Symbol</div>
+                <input class="inspector sdpi-item-value" id="symbol" value="">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label">Lot Size</div>
+                <input class="inspector sdpi-item-value" id="lot_size" value="">
+            </div>
+            <div class="sdpi-item">
+                <div class="sdpi-item-label">Are you done?</div>
+                <button class="sdpi-item-value" id="save" onclick="save()">Save</button>
+            </div>
+        </div>
+    </body>
+</html>
