@@ -5,6 +5,8 @@ import logging
 import tempfile
 from logging.handlers import RotatingFileHandler
 from multiprocessing import Process, freeze_support
+import msvcrt
+import ctypes
 
 # Third Party Imports
 import uvicorn
@@ -22,6 +24,23 @@ logging.basicConfig(
     handlers=[RotatingFileHandler(f"{temp_dir_path}\\cheesetrader.log", maxBytes=100000, backupCount=10)],
     format="[%(asctime)s] [%(levelname)s] [%(funcName)s] %(message)s",
     level=logging.DEBUG)
+
+
+# Generic Functions
+def disable_quickedit():
+    '''
+    Disable quickedit mode on Windows terminal. quickedit prevents script to
+    run without user pressing keys..'''
+    if not os.name == 'posix':
+        try:
+            kernel32 = ctypes.WinDLL('kernel32', use_last_error=True)
+            device = r'\\.\CONIN$'
+            with open(device, 'r') as con:
+                hCon = msvcrt.get_osfhandle(con.fileno())
+                kernel32.SetConsoleMode(hCon, 0x0080)
+        except Exception as e:
+            logging.info('Cannot disable QuickEdit mode! ' + str(e))
+            logging.info('.. As a consequence the script might be automatically paused on Windows terminal')
 
 
 # MetaTrader 5 Functions
@@ -167,6 +186,7 @@ def close_all_positions():
 
 if __name__ == "__main__":
     freeze_support()
+    disable_quickedit()
     logging.info("======== CheeseTrader Started ========")
     connect()
     uvicorn.run("cheesetrader:app",
