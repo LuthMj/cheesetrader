@@ -1,0 +1,59 @@
+name: Bug report 🐛
+description: Report errors or unexpected behavior 🤔
+labels: Needs-Triage
+body:
+- type: markdown
+  attributes:
+    value: >
+      This repository is **ONLY** for CheeseTrader issues.
+- type: checkboxes
+  attributes:
+    label: Prerequisites
+    options:
+    - label: Write a descriptive title.
+      required: true
+    - label: Make sure you are able to repro it on the [latest released version](https://github.com/cheesetrader/cheesetrader/releases)
+      required: true
+    - label: Search the existing issues.
+      required: true
+    - label: Refer to the [FAQ](https://github.com/cheesetrader/cheesetrader/blob/main/docs/FAQ.md).
+      required: true
+- type: textarea
+  attributes:
+    label: Steps to reproduce
+    description: >
+      List of steps, sample code, failing actions reproduces the behavior.
+    placeholder: >
+      I am experiencing a problem with X.
+      I think Y should be happening but Z is actually happening.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected behavior
+    render: console
+    placeholder: |
+      What do you expect?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Actual behavior
+    render: console
+    placeholder: |
+      What did happened?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Error details
+    description: Paste verbatim output from the CheeseTrader window (that black box in the background) that shows the error.
+    render: console
+    placeholder: ...
+- type: textarea
+  attributes:
+    label: Visuals
+    description: >
+      Please upload images or animations that can be used to reproduce issues in the area below.
+      Try the [Steps Recorder](https://support.microsoft.com/en-us/windows/record-steps-to-reproduce-a-problem-46582a9b-620f-2e36-00c9-04e25d784e47)
+      on Windows or [Screen Snippet](https://www.digitalcitizen.life/how-use-snip-sketch-take-screenshots-windows/).
