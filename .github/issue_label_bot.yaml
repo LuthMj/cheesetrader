@@ -2,3 +2,4 @@ label-alias:
   bug: 'Issue-Bug'
   feature_request: 'Issue-Enhancement'
   question: 'Issue-Question'
+  triage: 'Needs-Triage'

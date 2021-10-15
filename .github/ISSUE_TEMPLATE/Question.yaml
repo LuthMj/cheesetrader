@@ -1,0 +1,11 @@
+name: Question 🤔
+description: Please ask your question here
+labels: [Issue-Question, Needs-Triage]
+body:
+- type: textarea
+  attributes:
+    label: Summary of the new Question
+    description: >
+      A clear and concise question.
+  validations:
+    required: true
